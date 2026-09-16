@@ -1,0 +1,16 @@
+expansion-formula oracle: indices agree 4096 / 4096 | max |distance diff| 5.3e-14
+tile=    37: indices identical True, distances identical True
+tile=  1000: indices identical True, distances identical True
+tile=  4095: indices identical True, distances identical True
+tile=  5000: indices identical True, distances identical True
+tile=100000: indices identical True, distances identical True
+majority-class baseline (predict reference class 6 for every query): 9.38%
+nearest-centroid baseline: 50.76%
+1-NN condition accuracy: 69.34%
+1-NN per-class recall: {1: '58.4%', 2: '63.2%', 3: '67.5%', 4: '74.7%', 5: '55.7%', 6: '61.7%', 7: '95.6%', 8: '58.5%', 9: '65.1%', 10: '64.9%', 11: '99.7%'}
+rows shared between query and reference: 0
+1-NN accuracy over seeds 42,0,1,2,3,4: ['69.34%', '71.19%', '70.78%', '70.00%', '70.04%', '71.00%'] | mean 70.39%
+tiled: peak after sample() 130.09 MiB (rss  91.23) | peak after search 130.09 MiB | search added   +0.00 MiB
+full : peak after sample() 130.01 MiB (rss  91.09) | peak after search 347.18 MiB | search added +217.16 MiB
+tiled: peak after sample() 129.98 MiB (rss  91.06) | peak after search 129.98 MiB | search added   +0.00 MiB
+full : peak after sample() 130.15 MiB (rss  91.35) | peak after search 347.43 MiB | search added +217.28 MiB

@@ -1,0 +1,68 @@
+{
+  "tests": 14,
+  "rows": 58509,
+  "features": 48,
+  "duplicate_rows": 0,
+  "classes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "archive_sha256": "fbce04b326362156f007838cec6b12ab462113a467e7cc529f43471065460c77",
+  "accuracy": 0.693359375,
+  "exact_matches": 4096,
+  "full_distance_buffer_mib": 256,
+  "tile_distance_buffer_mib": 0.5,
+  "runs": {
+    "full": [
+      {
+        "seconds": 0.8221894999733195,
+        "peak_process_mib": 348.59375,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      },
+      {
+        "seconds": 0.7484228999819607,
+        "peak_process_mib": 348.48046875,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      },
+      {
+        "seconds": 0.7793640999589115,
+        "peak_process_mib": 348.0,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      }
+    ],
+    "tiled": [
+      {
+        "seconds": 0.8011576000135392,
+        "peak_process_mib": 132.41796875,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      },
+      {
+        "seconds": 0.7636368999956176,
+        "peak_process_mib": 130.76171875,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      },
+      {
+        "seconds": 0.7806254000170156,
+        "peak_process_mib": 131.51171875,
+        "index_sha256": "63368cedd05fcd7f0444193ef3ce0a6a04490b8d07c893f1e09e8f03b1f32d3e",
+        "distance_sha256": "e85d5cfe6bfe5d9dbee28ffb6455d9416fb2d799e685a4efee79edbe1484fdc6"
+      }
+    ]
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5"
+}
