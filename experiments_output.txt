@@ -1,0 +1,30 @@
+== 1. Reference-count sweep: 4,096 fixed queries, nested references, 3 fresh processes each ==
+  refs method  peak MiB  seconds matrix MiB  index hash
+  8192   full    326.06   0.8420      256.0  ['186273493ca13f2f']
+  8192  tiled    131.26   0.7780        0.5  ['186273493ca13f2f']
+ 16384   full    584.70   1.6751      512.0  ['98947aa9d69dcfbb']
+ 16384  tiled    130.62   1.6186        0.5  ['98947aa9d69dcfbb']
+ 32768   full   1102.86   4.4906     1024.0  ['f4036e09dee8d75a']
+ 32768  tiled    130.68   3.5135        0.5  ['f4036e09dee8d75a']
+
+== 2. Tile-size sweep at 8,192 references (main.py split), cdist kernel and BLAS kernel, 3 fresh processes each ==
+  tile     kernel  peak MiB  seconds  index hash
+    32      cdist    130.55   0.9885  ['63368cedd05fcd7f']
+    32       blas    130.52   0.4757  ['63368cedd05fcd7f']
+    64      cdist    130.95   0.9194  ['63368cedd05fcd7f']
+    64       blas    130.97   0.2625  ['63368cedd05fcd7f']
+   128      cdist    130.90   0.8422  ['63368cedd05fcd7f']
+   128       blas    130.63   0.2421  ['63368cedd05fcd7f']
+   256      cdist    130.57   0.7964  ['63368cedd05fcd7f']
+   256       blas    131.25   0.4191  ['63368cedd05fcd7f']
+   512      cdist    130.63   0.7983  ['63368cedd05fcd7f']
+   512       blas    130.68   0.4034  ['63368cedd05fcd7f']
+  1024      cdist    130.70   0.8133  ['63368cedd05fcd7f']
+  1024       blas    130.76   0.3985  ['63368cedd05fcd7f']
+  4096      cdist    325.93   0.8096  ['63368cedd05fcd7f']
+  4096       blas    585.63   0.4359  ['63368cedd05fcd7f']
+
+== 3. Kernel check: BLAS expansion vs exact cdist on the main.py split, in-process ==
+indices agree 4096 / 4096 | max |distance diff| 5.32e-14 | condition accuracy exact 69.34% vs blas 69.34%
+
+wrote experiments.json

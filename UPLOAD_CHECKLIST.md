@@ -6,4 +6,4 @@ Upload the contents of this folder, retaining filenames: main.py, validate.py, r
 
 Do not upload data.zip, the original book PDF, Python environments, __pycache__, private notes or credentials. A fresh run downloads the public data automatically. The ZIP provided for review excludes these items.
 
-vscode_run.png is a real capture of validate.py running in VS Code on 2026-09-16, taken after all checks passed. results.json contains the original measured results; results-rerun-2026-09-16.json and extra_checks_output.txt are the review re-runs.
+vscode_run.png and vscode_experiments.png are real captures of validate.py and experiments.py running in VS Code on 2026-09-16, taken after all checks passed. results.json contains the original measured results; results-rerun-2026-09-16.json and extra_checks_output.txt are the review re-runs.

@@ -1,0 +1,19 @@
+== BLAS kernel pinned to one thread (OPENBLAS_NUM_THREADS=1, fresh processes, tile 128, main.py split) ==
+{"seconds": 0.19687460002023727, "peak_mib": 129.609375, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "c824f7c21273ba6c"}
+{"seconds": 0.2155363999772817, "peak_mib": 129.609375, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "c824f7c21273ba6c"}
+{"seconds": 0.3302051000064239, "peak_mib": 129.52734375, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "c824f7c21273ba6c"}
+== cdist kernel, same setting, tile 256 ==
+{"seconds": 0.97792129998561, "peak_mib": 129.41015625, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "e85d5cfe6bfe5d9d"}
+{"seconds": 0.9553533000289463, "peak_mib": 129.4609375, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "e85d5cfe6bfe5d9d"}
+{"seconds": 1.0057445999700576, "peak_mib": 129.578125, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "e85d5cfe6bfe5d9d"}
+== default threads for reference: BLAS tile 128 ==
+{"seconds": 0.6530041999649256, "peak_mib": 131.50390625, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "4ffd85cb58ed884e"}
+{"seconds": 0.6620096000260673, "peak_mib": 131.140625, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "4ffd85cb58ed884e"}
+{"seconds": 0.576446000020951, "peak_mib": 130.66015625, "index_sha256": "63368cedd05fcd7f", "distance_sha256": "4ffd85cb58ed884e"}
+== OpenBLAS build / thread count ==
+[('openblas', '0.3.30', 8)]
+== harness gap: same full 4096x8192 computation, validate.py child vs experiments.py child (peak MiB) ==
+validate.py full   347.53
+experiments.py full 325.89
+validate.py full   347.43
+experiments.py full 326.11
